@@ -1,0 +1,17 @@
+Install the Access runtime 64 or 32
+Run the sandbox registry key 64 or 6432 (for 32-bit access software running on 64 bit pc).
+when you run the access app, it will warn you that VBA is about to run. VBA is the code behind Access.
+
+VBA changes after access 2013. and bugdatabase would require several modifications to run. 
+
+
+bugdatabase will load w/o sandbox set, but will not run.
+
+you can configure additional users or report administrators as persons other than the one who reported the bug.
+Click on the big button top right of the screen.
+
+You can change the default build and/or version number with version with its own bug sequence numbers. 
+new projects will start at the bug number you specify, usually #1. USE THE BIG BUTTON AT THE TOP LEFT OF THE 
+Screen. The project will appear first, then the preferences dialog. you can paste the project into the search bar
+and select it as the default project. Add users or 'found by' preferences here as the default at bug data entry.
+

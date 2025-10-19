@@ -1,0 +1,56 @@
+ 
+Welcome to The Bug Database! 
+ 
+
+Easy setup instrctions:
+De-archive into folders disk1,disk2 etc. Run Setup, run Workadm, logon as User.
+
+(P.S. other accounts: Bob, Guest(restricted user) 
+
+Run the "Runtime Workgroup Administrator" application to access the tables. Specify the 
+installed path to the system.mda file. i.e. c:\Access\system.mda. 
+
+
+For networking: 
+The Runtime Tables may be made accessible to users on a network group by running 
+the "Runtime Workgroup Administrator" application.
+
+To install to a network:
+Run Tsetup and install the rables to a networked drive. Choose a networked drive  that is 
+on a common  read/write  path to all PCs (install the shared tables). For example, on  a 
+Novell(TM) network select a drive that is mapped to  r:\users\common. Tell Tsetup the path 
+of the networked drive and install to it. Run the "Runtime Workgroup Administrator" application 
+and supply this path. Upon starting the The Bug Database, the application will link to the 
+tables in r:\users\common. 
+
+On each database user's PC:
+Run Setup.exe on the remaining PC's that have access the shared network drive. Choose 
+a local drive and path for the Runtime application, for example c:\access.  Run the 
+"Runtime Workgroup Administrator" application to access the shared tables on the network. 
+When running the "Runtime Workgroup Administrator" application select the path to the 
+system.mda file on the networked drive. i.e. r:\users\common\system.mda. 
+ 
+Special notes to Novell(TM) systems administrators:  
+
+To allow access for multiple users, set the networked access rights for each 
+user or group   to read and right access. Also from Windows(TM) File Manager, 
+select the networked drive (r:) and set the properties of "tables.mdb"  to "shareable."  
+  
+About "The Bug Database" runtime: 
+ 
+The Runtime application contains the data entry and report generation forms for documenting,   
+printing and to MSmail software problem reports. To gain access to the reports, click  the
+print or print preview button. To MSmail a report, choose print preview on the print form 
+and from the "file" menu select "send."  
+ 
+The Runtime can be customized for each user by clicking on  the "The Bug Database" button 
+in the top left of the data entry form. 
+ 
+About "The Bug Database" tables: 
+ 
+By clicking on the "Tables" icon,  projects can be added or modified to the available list
+of projects and builds. Users can be added to the project list for tracking bug entries. 
+Users will be able to select these projects as  preferences in the runtime customization 
+form.  The Tables may contain any number of projects.    
+ 
+For further reference on "The Bug Database"  see the BugData.doc on disk1.  

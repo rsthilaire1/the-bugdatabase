@@ -1,0 +1,37 @@
+Change the registry key, click Sandox64.reg or Sandbox6432.reg(for 32 bit runtime) 
+
+Important: Following these steps allows unsafe expressions to run in all instances of Access for all users on the computer.
+
+Close all instances of Access that are running on the computer for which you want to disable sandbox mode.
+
+Press the Windows key, type Run, and press ENTER.
+
+In the Open box, type regedit and then press ENTER.
+
+The Registry Editor starts.
+
+The specific location of the registry key will vary depending upon what version of Access you are running, the bitness (32 bit or 64 bit) of your Windows and Access version, and if you have a click-to-run installation. If you're having trouble finding the right registry key from the possible options displayed below, try searching the registry for Access Connectivity Engine.
+
+Expand the HKEY_LOCAL_MACHINE folder and navigate to the following registry key:
+
+If you're using Access 2016 or Access 2019, try looking here: \Software\Microsoft\Office\16.0\Access Connectivity Engine\Engines or here: \Software\WOW6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines
+
+If you're using the 32 bit Microsoft 365 subscription version of Access or a 32 bit click-to run installation of Access try looking here: Software\Microsoft\Office\ClickToRun\Registry\Machine\Software\Microsoft\Office\16.0\Access Connectivity Engine\Engines
+
+...or here:
+
+Software\Microsoft\Office\ClickToRun\Registry\Machine\Software\Microsoft\Office\15.0\Access Connectivity Engine\Engines
+
+If you're using the 64 bit Microsoft 365 subscription version of Access or a 64 bit click-to run installation of Access try looking here: Software\Microsoft\Office\ClickToRun\Registry\Machine\Software\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines
+
+...or here:
+
+Software\Microsoft\Office\ClickToRun\Registry\Machine\Software\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines
+
+In the right pane of the registry editor, under Name, double-click SandBoxMode if it is present. If you don’t find the SandBoxMode registry key, we do not recommend adding it, as it could interfere with Office updates.
+
+The Edit DWORD Value dialog box appears.
+
+In the Value Data field, change the value from 3 to 2, and then click OK.
+
+Close the Registry Ed
