@@ -4,6 +4,6 @@ alternately download the entire kit from:
 
 https://drive.google.com/file/d/1iB56HnCGKVmveiYGWzdoQTgWDvtV-D9s/view?usp=drive_link
 
-complete setup intructions included. This kit contains a well established software problem report databae. 
-If you have Microsoft Access versions 2007-2013 64 and with the kit 32 bit versions you won't need the runtime vesions 
-The msaccces.exe shortcut contails a pointer that facilitaes runtime access with the full versions of this access database.
+complete setup intructions included. This kit contains a well established software problem report database. 
+If you have Microsoft Access versions 2007-2013 64, and with the kit 32 bit versions, you won't need the runtime versions. 
+The msaccces.exe shortcut contains a pointer that facilitaes runtime acces susing the full versions of this access database.
